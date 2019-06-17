@@ -1,0 +1,20 @@
+{
+  "name": "shadow-dom",
+  "version": "0.0.0",
+  "description": "You don't need no stinking framework: Matering Shadow Dom",
+  "repository": "",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "live-reload": "^1.1.0",
+    "parallelshell": "3.0.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "server": "http-server -a localhost -p 8080 -c-1 ./app/",
+    "livereload": "live-reload --port 9091 app/",
+    "start": "parallelshell 'npm run server' 'npm run livereload'"
+  },
+  "dependencies": {}
+}
