@@ -18,14 +18,7 @@
 
       // Styles
       const style = document.createElement('style');
-      style.textContent = `
-          @keyframes blink {
-          0% { visibility: hidden; }
-          50% { visibility: hidden; }
-          100% { visibility: visible; }
-        }
-        .blink { animation: 1s linear infinite blink; }
-      `;
+      style.textContent = "@import './blink.css";
 
 
       //  Append
