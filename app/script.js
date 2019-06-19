@@ -16,6 +16,11 @@
       const text = this.getAttribute('text');
       wrapper.textContent = text;
 
+      // Create a slot for user input content
+      const slot = document.createElement('slot');
+      slot.setAttribute('name', 'blinkContent');
+      wrapper.appendChild(slot);
+
       // Styles
       const style = document.createElement('style');
       style.textContent = "@import './blink.css";
@@ -23,6 +28,9 @@
 
       //  Append
       shadow.appendChild(wrapper);
+      wrapper.appendChild(slot);
+
+      //  Append Styles
       wrapper.appendChild(style);
 
     }
