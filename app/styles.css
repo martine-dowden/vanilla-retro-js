@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  /* background: var(--accent); */
-  background: gray;
+  background: var(--accent);
+  /* background: gray; */
   color: var(--text);
   font-family: sans-serif;
   padding: 2rem 4rem;

@@ -28,6 +28,7 @@
       let blink = false;
       const button = document.createElement('button');
       button.setAttribute('type', 'button');
+      button.setAttribute('id', 'button');
       button.innerText = 'Start Blink';
       
       function toggleBlink() {
@@ -58,5 +59,8 @@
   }
 
   customElements.define('app-blink', Blink);
+
+  const myButton = document.getElementById('button');
+  myButton.onclick = () => alert('Hello World');
 
 })();
