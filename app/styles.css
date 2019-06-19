@@ -8,11 +8,8 @@ body {
   background: var(--accent);
   color: var(--text);
   font-family: sans-serif;
-}
-
-.content {
   font-size: 3rem;
-  margin-top: 4rem;
+  padding: 4rem;
   text-align: center;
 }
 
