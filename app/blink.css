@@ -25,3 +25,9 @@ button {
   padding: .5rem 1rem;
 }
 
+/* blink.css */
+:host-context(.dark) button {
+  background: var(--accent);
+  color: var(--primary);
+ }
+ 
