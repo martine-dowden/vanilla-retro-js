@@ -1,28 +1,13 @@
 html {
-  --blue: #1B998B;
-  --dark: #36453B;
+  --primary: #1B998B;
+  --text: #36453B;
   --accent: #FFFAE5;
 }
 
 body {
   background: var(--accent);
-  color: var(--dark);
+  color: var(--text);
   font-family: sans-serif;
-}
-
-h1 {
-  margin-top: 2rem;
-  text-align: center;
-}
-h1 small {
-  font-size: 1rem;
-}
-h1 span {
-  color: var(--blue);
-  display: block;
-  font-size: 1.75rem;
-  font-variant: small-caps;
-  letter-spacing: 1px;
 }
 
 .content {
@@ -30,3 +15,4 @@ h1 span {
   margin-top: 4rem;
   text-align: center;
 }
+

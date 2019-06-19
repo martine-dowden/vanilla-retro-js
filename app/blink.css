@@ -4,15 +4,11 @@
   100% { visibility: visible; }
 }
 :host {
-  --blue: #1B998B;
-  --dark: #36453B;
+  --primary: #1B998B;
   --accent: #FFFAE5;
+  --text: #36453B;
   display: block;
-  color: var(--dark);
-}
-
-.user-content {
-  display: block;
+  color: var(--text);
 }
 
 .blink {
@@ -20,7 +16,7 @@
 }
 
 button {
-  background: var(--blue);
+  background: var(--primary);
   border: none;
   border-radius: 4px;
   color: var(--accent);
@@ -29,6 +25,3 @@ button {
   padding: .5rem 1rem;
 }
 
-li {
-  color: blue;
-}
