@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
   console.log('loaded');
 
@@ -12,14 +12,28 @@
       });
 
       const wrapper = document.createElement('span');
+      wrapper.classList.add('blink');
       const text = this.getAttribute('text');
       wrapper.textContent = text;
 
+      // Styles
+      const style = document.createElement('style');
+      style.textContent = `
+          @keyframes blink {
+          0% { visibility: hidden; }
+          50% { visibility: hidden; }
+          100% { visibility: visible; }
+        }
+        .blink { animation: 1s linear infinite blink; }
+      `;
+
+
       //  Append
       shadow.appendChild(wrapper);
+      wrapper.appendChild(style);
 
     }
-    
+
   }
 
   customElements.define('app-blink', Blink);
