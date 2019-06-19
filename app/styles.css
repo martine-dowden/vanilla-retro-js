@@ -8,8 +8,5 @@ body {
   background: var(--accent);
   color: var(--text);
   font-family: sans-serif;
-  font-size: 3rem;
-  padding: 4rem;
-  text-align: center;
+  padding: 2rem 4rem;
 }
-
