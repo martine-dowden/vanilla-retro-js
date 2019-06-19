@@ -12,7 +12,6 @@
       });
 
       const wrapper = document.createElement('span');
-      wrapper.classList.add('blink');
       const text = this.getAttribute('text');
       wrapper.textContent = text;
 
@@ -25,10 +24,31 @@
       const style = document.createElement('style');
       style.textContent = "@import './blink.css";
 
+      // Button to toggle blink
+      let blink = false;
+      const button = document.createElement('button');
+      button.setAttribute('type', 'button');
+      button.innerText = 'Start Blink';
+      
+      function toggleBlink() {
+        console.log('blnik')
+        if (blink) {
+          slot.classList.remove('blink');
+          button.innerText = 'Start Blink';
+          blink = false;
+        } else {
+          slot.classList.add('blink');
+          button.innerText = 'Stop Blink';
+          blink = true;
+        }
+      }
+      button.onclick = toggleBlink;
+
 
       //  Append
       shadow.appendChild(wrapper);
       wrapper.appendChild(slot);
+      wrapper.appendChild(button);
 
       //  Append Styles
       wrapper.appendChild(style);
