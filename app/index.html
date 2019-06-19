@@ -10,7 +10,11 @@
   <body>
     <main>
 
-      <app-blink text="Hello World"></app-blink>
+      <app-blink>
+        <div slot="blinkContent">
+          <p>Hello World</p>
+        </div>
+      </app-blink>
 
 
     </main>
