@@ -1,8 +1,8 @@
-# Retro JS
+# Vanilla Retro JS
 
 ## Blink
 
-`import { Blink } from 'retro-js/src/vanilla-retro.js';`
+`import { Blink } from 'vanilla-retro-js/src/blink.js';`
 
 ```HTML
   <retro-blink>
@@ -14,7 +14,7 @@
 
 ## Marquee</h2>
 
-`import { Blink } from 'retro-js/src/vanilla-retro.js';`
+`import { Marquee } from 'vanilla-retro-js/src/marquee.js';`
 
 ```HTML
   <retro-marquee direction="bottom">
