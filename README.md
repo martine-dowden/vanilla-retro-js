@@ -1,5 +1,8 @@
 # Vanilla Retro JS
 
+Demo: https://martine-dowden.github.io/vanilla-retro-js/
+NPM: https://www.npmjs.com/package/vanilla-retro-js
+
 ## Blink
 
 `import { Blink } from 'vanilla-retro-js/src/blink.js';`
