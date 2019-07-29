@@ -1,14 +1,28 @@
-# I Don’t Need No Stinkin’ Framework - I Don’t Need No Stinkin’ Framework - Mastering Shadow DOM
+# Retro JS
 
-Want to create components that work regardless of the front-end framework you are using?
-Tired of throwing away your components when you change front-end frameworks?
-Wish you could just code it once and reuse it on all of your projects?
+## Blink
 
-Me too! Components are a staple of front-end development as they increase development speed, consistency, and reduce the need for repeat code. To create components often we turn to frameworks such as Angular, React, and Vue but we don't need to.
+```HTML
+  <retro-blink>
+    <div slot="content">
+      <p>Blink</p>
+    </div>
+  </retro-blink>
+```
 
-Using nothing more than HTML and Javascript that is readily available to us in all modern browsers we can create components that work without being tied to any one front-end framework.
+## Marquee</h2>
 
-You will walk away with the knowledge you need to go forth and create your own components, understand how to make them look gorgeous, and what if any limitations there are. Also, find out how you can bring back the blink tag!
+```HTML
+  <retro-marquee direction="bottom">
+    <span slot="content">Marquee Tag</span>
+  </retro-marquee>
+```
+
+### Properties
+
+- height: number
+- width: number
+- direction: top | bottom | left | right (default: right)
 
 ## Running the Project
 
@@ -16,4 +30,3 @@ You will walk away with the knowledge you need to go forth and create your own c
 $ npm start
 > navigate to http://localhost:8080/
 ```
-
