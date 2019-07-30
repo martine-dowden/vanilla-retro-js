@@ -1,1 +1,1 @@
-import { Blink, Marquee } from '../src/vanilla-retro.js';
+import './vanilla-retro.js';
