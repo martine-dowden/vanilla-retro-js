@@ -2,6 +2,8 @@
 
 Demo: https://martine-dowden.github.io/vanilla-retro-js/
 
+Source: https://github.com/martine-dowden/vanilla-retro-js
+
 NPM: https://www.npmjs.com/package/vanilla-retro-js
 
 ## Blink
