@@ -1,9 +1,9 @@
 {
   "name": "vanilla-retro-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vanilla JS UI component library of HTML deprecated tags.",
   "author": "Martine Dowden",
-  "repository": "",
+  "repository": "https://github.com/martine-dowden/vanilla-retro-js",
   "license": "MIT",
   "private": false,
   "devDependencies": {

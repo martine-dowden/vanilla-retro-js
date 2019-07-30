@@ -1,6 +1,7 @@
 # Vanilla Retro JS
 
 Demo: https://martine-dowden.github.io/vanilla-retro-js/
+
 NPM: https://www.npmjs.com/package/vanilla-retro-js
 
 ## Blink
@@ -37,3 +38,27 @@ NPM: https://www.npmjs.com/package/vanilla-retro-js
 $ npm start
 > navigate to http://localhost:8080/
 ```
+
+## Using Components in an Angular or Vue Project
+
+Per component
+
+in Module or main.js:
+
+```JavaScript
+  import 'vanilla-retro-js/src/{ componentName.js }';
+```
+
+example
+
+```JavaScript
+  import 'vanilla-retro-js/src/blink.js';
+```
+
+Import whole library
+
+```JavaScript
+  import 'vanilla-retro-js/src/vanilla-retro.js';
+```
+
+
